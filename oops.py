@@ -10,7 +10,7 @@
 # node is a blueprint for creating nodes 
 # linkedlist  is a blueprint for creating the list 
 
-# now connecting to the code
+# now connecting to the code with linkedList
 
 class Node:
     def __init__(self, data):
