@@ -109,11 +109,13 @@ class BST:
         # case 3: key == root.data(delete this node)
         else:
             # Node with one or no child
+            #case 3a No left child
             if root.left is None:
                 return root.right
+            #case 3b: No right child
             elif root.right is None:
                 return root.left
-            
+            #Case 3c
             # Node with two children 
             successor = self.minValueNode(root.right)
             root.data = successor.data
